@@ -1,0 +1,620 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safr - Your final arrangements | Your personal touch</title>
+  <meta name="description"
+    content="In a few simple steps, you can register your details and begin focussing on your personal requirements for when the inevitable occurs." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Safr - Your final arrangements | Your personal touch" />
+  <meta property="og:description"
+    content="In a few simple steps, you can register your details and begin focussing on your personal requirements for when the inevitable occurs." />
+  <meta property="og:image" content="./images/arabic-black-01.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+    body {
+      font-family: 'Gilda Display', serif;
+      background-color: white;
+      color: black;
+      transition: 0.7s ease;
+    }
+
+    .wrapper {
+      position: relative;
+    }
+
+    .card-text span {
+      display: contents;
+    }
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+      transition: 0.7s ease;
+    }
+
+    .logo {
+      background-image: url(./images/logo-black.png);
+      width: 250px;
+      height: 100px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .dark-mode .logo {
+      background-image: url(./images/logo-white.png);
+      width: 250px;
+      height: 100px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .dark-mode-btn {
+      position: fixed;
+      right: 0;
+      z-index: 999;
+    }
+
+    .header-container {
+      padding-left: 6rem;
+    }
+
+    .banner-btn img {
+      width: 200px;
+      padding-top: 40px;
+    }
+
+    .banner-section .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .main-heading h1 {
+      font-size: 70px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .main-para p {
+      font-size: 30px;
+      padding-top: 40px;
+    }
+
+    .mob-image img {
+      width: 320px;
+    }
+
+    .content-section,
+    .card-box-section,
+    .footer-section {
+      padding-top: 10rem;
+    }
+
+    .two-card-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .two-card-section .row {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .two-card-section .row .card {
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-points {
+      display: flex;
+      justify-content: center;
+    }
+
+    .content-para p {
+      font-size: 22px;
+    }
+
+    /* .content-img img {
+           
+
+        } */
+
+    .content-img span {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .content-para,
+    .content-points {
+      padding-top: 3rem;
+    }
+
+    .card-boxes .card,
+    .two-card-box .card {
+      border-radius: 0 !important;
+      border: none !important;
+      background-color: transparent;
+    }
+
+    .card-boxes h5 {
+      font-size: 24px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-boxes p {
+      font-size: 16px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .two-card-box h4 {
+      font-size: 28px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .two-card-box p {
+      font-size: 18px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-box ul li {
+      text-decoration: none;
+      list-style: none;
+    }
+
+    .social-icons img {
+      width: 30px;
+    }
+
+    .social-icons ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons ul li {
+      margin-right: 15px;
+    }
+
+    a {
+      text-decoration: none !important;
+      color: unset !important;
+    }
+
+    .footer-btn img {
+      width: 150px;
+    }
+
+    .footer-box h4 {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .list-items li {
+      font-size: 20px;
+      font-weight: 400;
+      padding-bottom: 5px;
+    }
+
+    .list-items {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .mob-image img {
+        width: 280px;
+      }
+
+      .main-heading h1 {
+        font-size: 50px;
+      }
+
+      .main-para p {
+        font-size: 26px;
+      }
+
+      .footer-img .logo {
+        width: 170px;
+      }
+
+      .social-icons ul li {
+        margin-right: 10px;
+      }
+
+      .footer-btn img {
+        width: 120px;
+      }
+
+      .card-boxes h5 {
+        font-size: 16px;
+      }
+
+      .card-boxes p {
+        font-size: 14px;
+      }
+
+      .two-card-box p {
+        font-size: 14px;
+      }
+
+      .two-card-box h4 {
+        font-size: 22px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .main-heading h1 {
+        text-align: center;
+      }
+
+      .logo {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .header-container {
+        padding-left: 0rem;
+        padding-right: 0;
+      }
+
+      .main-para p {
+        text-align: center;
+      }
+
+      .banner-btn {
+        justify-content: center;
+      }
+
+      .mob-image img {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        padding-top: 40px;
+      }
+
+      .content-para,
+      .content-points {
+        padding-top: 2rem;
+      }
+
+      .list-items,
+      .download,
+      .connect,
+      .footer-img {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .footer-btn {
+        justify-content: center;
+        padding-bottom: 2rem;
+      }
+
+      .content-section,
+      .card-box-section,
+      .two-card-section,
+      .footer-section {
+        padding-top: 7rem;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .logo {
+        width: 220px;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .main-heading h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .main-para p {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      .banner-btn {
+        justify-content: center;
+      }
+
+      .banner-btn img {
+        width: 150px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .mob-image {
+        display: flex;
+        justify-content: center;
+      }
+
+      .content-para p {
+        font-size: 20px;
+      }
+
+      .content-img span {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .content-section,
+      .card-box-section,
+      .two-card-section,
+      .footer-section {
+        padding-top: 7rem;
+      }
+
+      .content-para,
+      .content-points {
+        padding-top: 2rem;
+      }
+
+      .list-items,
+      .download,
+      .connect {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .footer-btn {
+        justify-content: center;
+        padding-bottom: 2rem;
+      }
+    }
+
+    .checkbox {
+      opacity: 0;
+      position: absolute;
+    }
+
+    .checkbox-label {
+      background-color: #111;
+      width: 50px;
+      height: 26px;
+      border-radius: 50px;
+      position: relative;
+      padding: 5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .moon {
+      color: #f1c40f;
+    }
+
+    .sun {
+      color: #f39c12;
+    }
+
+    .checkbox-label .ball {
+      background-color: #fff;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      border-radius: 50%;
+      transition: transform 0.2s linear;
+    }
+
+    .checkbox:checked+.checkbox-label .ball {
+      transform: translateX(24px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-logo">
+        <div class="container-fluid header-container pt-5 pb-5">
+          <div class="header-img">
+            <a href="index.html">
+              <div class="logo"></div>
+            </a>
+          </div>
+          <!-- <div class="logo-text">
+                <span>your final journey,your way</span>
+            </div> -->
+        </div>
+      </div>
+    </header>
+    <div class="dark-mode-btn">
+      <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="checkbox-label">
+        <i class="fa fa-moon-o moon" aria-hidden="true"></i>
+        <i class="fa fa-sun-o sun" aria-hidden="true"></i>
+        <span class="ball"></span>
+      </label>
+    </div>
+
+    <section class="two-card-section">
+      <div class="two-card-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <a href="#">
+                  <img id="user-profile-image" src="" style="display: none; height: 350px; object-fit: contain; margin-bottom: 20px;" class="card-img-top" alt="..." />
+                </a>
+                <div class="card-body">
+                  <h4>
+                    إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ</h4>
+                  <p class="card-text">
+                    "Indeed, we belong to Allah, and indeed, to Him
+                    we return."</p>
+                  <p class="card-text">
+                    it is with great sadness we announce the death of <span id="user-name"></span>, <span
+                      id="father-name"></span>, <span id="brother-name"></span> of <span id="user-address"></span>.
+                    <br>For funeral arrangements or further information please contact <span
+                      id="user-guardians-name"></span> <span id="user-guardians-contact"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="footer-img">
+                <div class="logo"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <!-- <h4>About</h4> -->
+              <div class="list-items">
+                <ul class="ps-0">
+                  <li><a href="#">contact</a></li>
+                  <li><a href="#">feeback</a></li>
+                  <li><a href="#">support</a></li>
+                  <li><a href="#">FAQ's</a></li>
+                  <li><a href="#">privacy</a></li>
+                  <li><a href="#">privacy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="connect">
+                <h4>Connect</h4>
+                <div class="social-items">
+                  <div class="social-icons">
+                    <ul class="ps-0">
+                      <li>
+                        <a href="#"><img src="./images/facebook.png" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="./images/instagram.png" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="./images/twitter.png" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="./images/tik-tok.png" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="./images/youtube.png" alt="" /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="download">
+                <h4>download</h4>
+                <div class="footer-app-btn">
+                  <div class="footer-btn d-flex">
+                    <a href="#"><img src="./images/google.png" alt="" /></a>
+                    <a href="#"><img src="./images/appstore.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <script>
+    const checkbox = document.getElementById('checkbox')
+    checkbox.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode')
+    })
+
+    $(document).ready(function () {
+      const id = new URLSearchParams(window.location.search).get('user_id');
+
+      if (id) {
+        $.ajax({
+          type: "GET",
+          url: `https://lm3zp431-3000.inc1.devtunnels.ms/users/user-death/${id}`,
+          success: function (response) {
+            if (response.success) {
+              $('#user-name').text(response.user?.name || "Name not available");
+              $('#father-name').text("son of " + response.fatherDetail?.father_name || "Father's name not available");
+              if (response.brotherDetail) {
+                $('#brother-name').text("brother of " + response.brotherDetail.brother_name + ",");
+              } else {
+                $('#brother-name').text(""); // Default empty if no brother detail
+              }
+              $('#user-address').text(response.user?.address || "Address not available");
+
+              // Set the profile image if available
+              if (response.user?.profile_image) {
+                $('#user-profile-image').attr('src', "https://safr-app-media.s3.eu-west-2.amazonaws.com/"+response.user.profile_image); // Assuming profile_image is the URL
+                $('#user-profile-image').show(); // Ensure it's visible if the image exists
+              } else {
+                $('#user-profile-image').hide(); // Hide the image if it's not available
+              }
+
+              if (response.user_guardians && response.user_guardians.length > 0) {
+                const guardiansHtml = response.user_guardians
+                  .filter(guardian => guardian.name && guardian.contact) // Ensure valid entries
+                  .map(guardian => `${guardian.name} (${guardian.contact})`) // Format each guardian
+                  .join(" or "); // Join them with "or"
+
+                if (guardiansHtml) {
+                  $('#user-guardians-name').html(guardiansHtml); // Set the content dynamically
+                } else {
+                  $('#user-guardians-name').text("No guardians available."); // Handle case when all guardians are invalid
+                }
+              } else {
+                $('#user-guardians-name').text("No guardians available.");
+              }
+            }
+          },
+          error: function (error) {
+            console.error("AJAX Request Failed:", error);
+            alert("An error occurred while fetching user data. Please try again later.");
+          }
+        });
+      } else {
+        console.warn("No user-id found in the URL.");
+      }
+    });
+
+  </script>
+</body>
+
+</html>
